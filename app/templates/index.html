@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <h3 class="mb-5 mt-5 text-center">Список сотрудников</h3>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">ФИО</th>
+          <th scope="col">Инн</th>
+          <th scope="col">Должность</th>
+          <th scope="col">Отдел</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <th scope="row">id</th>
+          <td>name</td>
+          <td>inn</td>
+          <td>position_name</td>
+          <td>position_department</td>
+          <td>
+            <a class="btn btn-warning" href="#">Изменить</a>
+            <a class="btn btn-danger" href="#">Удалить</a>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+</div>
+
+{% endblock content %}
